@@ -82,12 +82,12 @@
 
                 <label>Choose the size you want:</label>
                 <select class="custom-select custom-select-md mb-3" id="size" required>
-                    <option value="regular">Pizza-pie</option>
+                    <option value="pizza-pie">Pizza-pie</option>
                     <option value="regular">Regular</option>
                     <option value="medium">Medium</option>
                     <option value="large">Large</option>
-                    <option value="regular">Double-stack</option>
-                    <option value="regular">Mega</option>
+                    <option value="double-stack">Double-stack</option>
+                    <option value="mega">Mega</option>
                 </select>
 
                 <label for="crust">Choose kind of Crust:</label>
@@ -119,14 +119,14 @@
             </form>
 
             <a href="#summary">
-                <button type="submit" class="btn btn-primary checkout" id="checkout">
+                <button type="submit" class="btn btn-primary checkout" id="checkout" onclick="calctotalPrice()">
                     Checkout
                 </button>
             </a>
 </div> 
 
-<div class="delivery-or-not" id="sum-order">
-    <h1 class="text-center" id="state-of-order">Order state</h1>
+<div class="delivery-or-not text-center" id="sum-order">
+    <h1 class="text-center" id="state">Order state</h1>
     <h2 class="text-center state">You ordered the following:</h2>
     <ol id="list" class="text-center sum">
     </ol>
@@ -138,12 +138,17 @@
                 <input type="text" class="customerdata" placeholder="Enter your Name:"><br>
                 <input type="text" class="customerdata" placeholder="Enter your phone number: "><br>
                 <input type="text" class="customerdata" placeholder="Enter the location: "><br><br>
-
-                <button class="btn bg-danger text-center">Make Delivery</button>
-            </form>
-            <div class="col-sm-3">  
+                </form>
             </div>
     </div>
+    <div class=" text-center">
+        <button class='deliver' class="btn btn-danger">Make Delivery</button>
+        <button class='not-deliver' class="btn btn-success">Pick Up</button>
+    </div> 
+</div>
+
+
+
 </div>
 
 
