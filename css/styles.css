@@ -29,3 +29,6 @@ h1{
 .nav-link { 
     margin-right: 1em !important;
 }
+.navbar-collapse { 
+    justify-content: flex-end;
+}
