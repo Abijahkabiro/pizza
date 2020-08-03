@@ -23,3 +23,9 @@ h1{
 .text-center{
     color: violet;
 }
+.navbar { 
+    background:yellowgreen;
+}
+.nav-link { 
+    margin-right: 1em !important;
+}
