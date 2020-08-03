@@ -491,6 +491,41 @@ $(function () {
                         }
                         break;
         }
+
+
+        switch (topping) {
+            case topping = "onions":
+                totalPrice = totalPrice + 70;
+                break;
+            case topping = "tomatoes":
+                totalPrice = totalPrice + 80;
+                break;
+            case topping = "mushroom":
+                totalPrice = totalPrice + 90;
+                break;
+            case topping = "greenpepper":
+                totalPrice = totalPrice + 60;
+                break;
+            case topping = "olives":
+                totalPrice = totalPrice + 120;
+                break;
+            case topping = "pineapple":
+                totalPrice = totalPrice + 140;
+                break;
+            case topping = "sweetcorn":
+                totalPrice = totalPrice + 150;
+                break;
+            case topping = "mince":
+                totalPrice = totalPrice + 150;
+                break;
+            case topping = "beef":
+                totalPrice = totalPrice + 190;
+                break;
+            case topping = "chicken":
+                totalPrice = totalPrice + 200;
+                break;
+
+        }
                         
 
 
