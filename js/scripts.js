@@ -7,7 +7,7 @@ $(function () {
         let number = $("#number").val();
         console.log(size);
 
-        let order = (flavor, size, crust, topping, number, total) => {
+        let order = (flavor, size, crust, topping, number, total)  =>{
             return {flavor, size, crust, topping, number, total};
         };
 
@@ -526,7 +526,10 @@ $(function () {
                 break;
 
         }
-                        
+
+
+        let newOrder = order(flavour, size, crust, topping, number, totalPrice);
+        console.log(newOrder);               
 
 
 
@@ -534,5 +537,5 @@ $(function () {
 
 
 
-
+    }
 }
