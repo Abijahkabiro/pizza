@@ -20,7 +20,7 @@ function calctotalPrice(e) {
     var totalPrice = (getSizeCost() + getCrustCost() + getTopping()) * (getNumber());
     
         console.log(totalPrice);
-    alert("Your order of " + getNumber() + " pizzas has been processed.Your should pay " + totalPrice +"." )
+        alert("Your order of " + getNumber() + " pizzas has been processed.You should pay " + totalPrice +"." )
 }
 
 //user interface logic
