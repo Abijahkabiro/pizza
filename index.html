@@ -14,14 +14,18 @@
                 <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">   
                 <span class="navbar-toggler-icon"></span>  
                 </button> 
-                <div class="collapse-navbar-collapse" id="main-navigation">   
+                <div class="collapse navbar-collapse" id="main-navigation">   
                 <ul class="navbar-nav">      
                        <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>     
                        <li class="nav-item"><a class="nav-link" href="#">Orders</a></li>    
+                       <li class="nav-item"><a class="nav-link" href="#">Delivery</a></li>
                        <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>  
+
+
                 </ul> 
                 </div>
             </nav> 
+            <br>
             <h2>We offer good pizza with large<br> variety at affordable prices.</h2>
             <br><br><br><br>
               </div>
@@ -34,30 +38,30 @@
         <h1 class="text-center" id="menu">Menu</h1>
         <div class="pizza-menu row text-center">
             
-            <figure class="col-sm-2">
+            <div class="col-sm-2">
                 <img src="images/pizza-pie.jpg" alt="pizza-pie" class="wiggle" width="100%">
-                <figcaption>Pizza Pie<br>Ksh. 280</figcaption>
-            </figure>
-            <figure class="col-sm-2">
+                <div>Pizza Pie<br>Ksh. 280</div>
+            </div>
+            <div class="col-sm-2">
                 <img src="images/regular.jpg" alt="regular-pizza" class="wiggle" width="100%">
-                <figcaption>Regular<br>Ksh. 560</figcaption>
-            </figure>
-            <figure class="col-sm-2">
+                <div>Regular<br>Ksh. 560</div>
+            </div>
+            <div class="col-sm-2">
                 <img src="images/medium.jpg" alt="medium-pizza" class="wiggle" width="100%">
-                <figcaption>Medium<br>Ksh. 780</figcaption>
-            </figure>
-            <figure class="col-sm-2">
+                <div>Medium<br>Ksh. 780</div>
+            </div>
+            <div class="col-sm-2">
                 <img src="images/large.jpg" alt="large-pizza" class="wiggle" width="100%">
-                <figcaption>Large<br>Ksh. 1100</figcaption>
-            </figure>
-            <figure class="col-sm-2">
+                <div>Large<br>Ksh. 1100</div>
+            </div>
+            <div class="col-sm-2">
                 <img src="images/double-stack.jpg" alt="double-stack-pizza" class="wiggle" width="100%">
-                <figcaption>Double Stack<br>Ksh. 1260</figcaption>
-            </figure>
-            <figure class="col-sm-2">
+                <div>Double Stack<br>Ksh. 1260</div>
+            </div>
+            <div class="col-sm-2">
                 <img src="images/mega.jpg" alt="mega-pizza" class="wiggle" width="100%">
-                <figcaption>Mega<br>Ksh. 1340</figcaption>
-            </figure>
+                <div>Mega<br>Ksh. 1340</div>
+            </div>
         </div>
     </div>
 </div>
@@ -73,8 +77,6 @@
                     <option value="periperi">Peri-Peri Chicken</option>
                     <option value="bbq">BBQ Steak</option>
                     <option value="chickentikka">Chicken tikka</option>
-                    <option value="bbq">BBQ Steak</option>
-                    <option value="boerewors">Boerewors</option>
                     <option value="hawaiian">Hawaiian</option>
                     <option value="mushroom">Chicken and Mushroom</option>
                     <option value="vegtikka">Veg Tikka</option>
@@ -82,78 +84,73 @@
 
                 <label>Choose the size you want:</label>
                 <select class="custom-select custom-select-md mb-3" id="size" required>
-                    <option value="pizza-pie">Pizza-pie</option>
-                    <option value="regular">Regular</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                    <option value="double-stack">Double-stack</option>
-                    <option value="mega">Mega</option>
+                    <option value="280" name="pizza-pie" >Pizza-pie @ Ksh. 280</option>
+                    <option value="560" name="regular">Regular @ Ksh. 560</option>
+                    <option value="780" name="medium">Medium @ Ksh. 780</option>
+                    <option value="1100"name="large">Large @ Ksh. 1100</option>
+                    <option value="1260" name="double-stack">Double-stack @ Ksh. 1260</option>
+                    <option value="1340"name="mega">Mega @ Ksh. 1340</option>
                 </select>
 
                 <label for="crust">Choose kind of Crust:</label>
                 <select class="custom-select custom-select-md mb-3" id="crust" required>
-                    <option value="thin">Thin Crust @ Ksh. 120</option>
-                    <option value="thick">Thick Crust @ Ksh. 170</option>
-                    <option value="flatbread">FlatBread Crust @ sh. 200</option>
-                    <option value="custom">Custom Crust @ sh. 270</option>
+                    <option value="130" name="thin">Thin Crust @ Ksh. 130</option>
+                    <option value="150" name="thick">Thick Crust @ Ksh. 150</option>
+                    <option value="190" name="flatbread">FlatBread Crust @ sh. 190</option>
+                    <option value="260"name="custom">Custom Crust @ sh. 260</option>
                 </select>
 
                 <label>Choose the toppings you want:</label>
                 <select class="custom-select custom-select-md mb-3" id="toppings" required>
-                    <option value="onions">Onions @ sh. 70</option>
-                    <option value="tomatoes">Tomatoes @ sh. 80</option>
-                    <option value="mushroom">Mushroom @ sh. 80</option>
-                    <option value="greenpepper">Green Pepper @ sh. 80</option>
-                    <option value="olives">Olives @ sh. 120</option>
-                    <option value="pineapple">Pineapple @ sh. 120</option>
-                    <option value="sweetcorn">Sweet Corn @ sh. 120</option>
-                    <option value="macon">Macon @ sh. 120</option>
-                    <option value="mince">Mince @ sh. 120</option>
-                    <option value="beef">Beef Peperoni @ sh. 170</option>
-                    <option value="chicken">Periperi Chicken @ sh. 170</option>
+                    <option value="70" name="onions" id="topping">Onions @ sh. 70</option>
+                    <option value="80" name="tomatoes" id="topping">Tomatoes @ sh. 80</option>
+                    <option value="90" name="mushroom" id="topping">Mushroom @ sh. 90</option>
+                    <option value="60" name="greenpepper" id="topping">Green Pepper @ sh. 60</option>
+                    <option value="120" name="olives" id="topping">Olives @ sh. 120</option>
+                    <option value="140" name="pineapple" id="topping">Pineapple @ sh. 140</option>
+                    <option value="150" name="sweetcorn" id="topping">Sweet Corn @ sh. 150</option>
+                    <option value="150"name="mince" id="topping">Mince @ sh. 150</option>
+                    <option value="190" name="beef" id="topping">Beef Peperoni @ sh. 190</option>
+                    <option value="200" name="chicken" id="topping">Periperi Chicken @ sh. 200</option>
                 </select>
 
                 <label for="number">Number of Pizza's</label>
-                <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
-
+                <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required><br>
+                
+                <button type="button" class="btn btn-primary checkout" id="submit" value="Checkout" onclick="calctotalPrice()"> Checkout</button>
             </form>
 
-            <a href="#summary">
-                <button type="submit" class="btn btn-primary checkout" id="checkout" onclick="calctotalPrice()">
-                    Checkout
-                </button>
-            </a>
-</div> 
-
-<div class="delivery-or-not text-center" id="sum-order">
-    <h1 class="text-center" id="state">Order state</h1>
-    <h2 class="text-center state">You ordered the following:</h2>
-    <ol id="list" class="text-center sum">
-    </ol>
-    
-    <div class="customerdata text-center">
-        <div class="customerdata row">
-            <div class="col-sm-3"></div>
-            <form action="" class="form-group col-lg-6 data">
-                <input type="text" class="customerdata" placeholder="Enter your Name:"><br>
-                <input type="text" class="customerdata" placeholder="Enter your phone number: "><br>
-                <input type="text" class="customerdata" placeholder="Enter the location: "><br><br>
-                </form>
-            </div>
+            
         </div>
     </div>
-    <div class=" text-center">
-        <button class='deliver' class="btn btn-danger">Make Delivery</button>
-        <button class='not-deliver' class="btn btn-success">Pick Up</button>
-    </div> 
 </div>
-<br>
-<br>
 
+
+<div class="delivery-or-not">
+    <h1 class="text-center">Delivery</h1>
+    <h6 class="text-center"> For delivery services,enter the following details: </h6>
+  <div class="form-group row">
+    <div class="col-sm-6 text-center">
+        <div class="formlocation delivery-overlay text-center">
+            <form class="delivery col-sm-6 offset-sm-9 text-center " id="delivery">
+                <label for="name">Name</label>
+                <input class="form-control" type="text"  id="name" placeholder="name...">
+                <label for="location">Location</label>
+                <input class="form-control" type="text" id="location" placeholder="location...">
+                <label for="phonenumber">Phone Number</label>
+                <input class="form-control" type="tel" placeholder="07........" id="number"> <br>
+                <button class='deliver' id="deliver" class="btn btn-danger">Delivery</button>
+                <button class='not-deliver' id="deliver-or-not" class="btn btn-success">Pick Up</button>
+            </form>
+        </div>   
+    </div>
+  </div>
+</div>
+</div>
 <div class="contacts">
     <h1 class="text-center" id="contacts">Contacts</h1>
 <div class="socialMediaIcons text-center" id="socialMediaIcons">
-    <br><br>
+    <br>
     <img src="images/twitter.png" alt="Twitter icon"> 
     <img src="images/facebook.png" alt="Facebook icon">
     <img src="images/you_tube.png" alt="You tube icon">
