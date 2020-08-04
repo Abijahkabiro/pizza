@@ -10,11 +10,8 @@ function getNumber() {
     var selectedNumber = document.getElementById("number").value;
     return parseInt(selectedNumber);
 }
-function onions() {
-    var onion = 0;
-    var addOnion = document.getElementById("topping");
-    if (addOnion.checked === true) {
-        onion= 70;
-    }
-    return parseInt(onion);
+function getTopping() {
+    var selectedTopping= document.getElementById("toppings").value;
+    return parseInt(selectedTopping);
 }
+
