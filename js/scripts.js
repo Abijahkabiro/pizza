@@ -1,3 +1,4 @@
+//business logic
 function getSizeCost() {
     var selectedSize = document.getElementById("size").value;
     return parseInt(selectedSize);
@@ -22,7 +23,7 @@ function calctotalPrice(e) {
     alert("Your order of " + getNumber() + " pizzas has been processed.Your should pay " + totalPrice +"." )
 }
 
-
+//user interface logic
 $(document).ready(function () {
     $("#delivery").submit(function () {
 
